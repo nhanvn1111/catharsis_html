@@ -1,0 +1,191 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+a, b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+input[type="text"], input[type="password"], textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td
+{
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+body, input, select, textarea, button
+{
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	background: #ccc url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/gray_jean.png') center center;
+}
+
+a {
+	position: absolute;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	color: #fff;
+	text-decoration: none;
+}
+
+a img {   
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+}
+
+a:hover { background-color: rgba(0,0,0,0.1); }
+
+a.left {
+	left: 0;
+}
+
+a.right {
+	right: 0;
+	background: rgba(0,174,200,0.5);
+}
+
+a.right:hover { background-color: rgba(0,174,200,0.7); }
+
+a:hover img {
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+}
+
+
+#devices {
+    margin: auto;
+    height: 500px;
+    width: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -240px;
+}
+
+#devices > div {
+    float: left;
+    margin: 20px;
+}
+
+.device {
+    background: #222;
+    border: solid 3px #b6b6b6;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#desktop {
+    width: 480px;
+    height: 270px;
+    height: auto;
+}
+
+#desktop .button {
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    -webkit-border-radius: 7.5px;
+    -moz-border-radius: 7.5px;
+    border-radius: 7.5px;
+    border: solid 1px #b6b6b6;
+}
+
+#desktop .screen {
+    margin: 6%;
+    display: block;
+    border: solid 1px #b6b6b6;
+    background: #f9f9f9;
+    height: 243.8095238095238px;
+    overflow: hidden;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+#desktop .screen .text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 400;
+	line-height: 1em;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.stand {
+    position: relative;
+    margin: auto;
+    width: 120px;
+    height: 45px;
+}
+
+.stand .left-side, .stand .right-side {
+    background: white;
+    height: 45px;
+    width: 60px;
+    border: solid 3px #b6b6b6;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    border-top: 0px;
+    border-bottom: 3px transparent solid;
+}
+
+.stand .left-side {
+    -webkit-transform: skew(-10deg, 0);
+    -moz-transform: skew(-10deg, 0);
+    -ms-transform: skew(-10deg, 0);
+    transform: skew(-10deg, 0);
+    left: 0;
+    border-right: 3px solid white;
+}
+
+.stand .right-side {
+    -webkit-transform: skew(10deg, 0);
+    -moz-transform: skew(10deg, 0);
+    -ms-transform: skew(10deg, 0);
+    transform: skew(10deg, 0);
+    right: 0;
+    border-left: 3px solid white;
+}
+
+.base .bottom {
+    background: white;
+    border: solid 3px #b6b6b6;
+    margin: auto;
+    -webkit-border-top-right-radius: 50px 15px;
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-top-left-radius: 50px 15px;
+    -moz-border-radius-topright: 50px 15px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    -moz-border-radius-topleft: 50px 15px;
+    border-top-right-radius: 50px 15px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 50px 15px;
+    width: 160px;
+    height: 10px;
+    position: relative;
+    z-index: 1;
+    margin-top: -3px;
+}
+
+/** Mixins.less
+ *  * Snippets of reusable CSS to develop faster and keep code readable
+ *  * initially based on https://github.com/jonikorpi/Frameless/blob/master/framelessgrid.com/assets/helpful-LESS-functions.less
+ *  * ----------------------------------------------------------------- 
+ */
